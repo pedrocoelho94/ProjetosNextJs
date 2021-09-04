@@ -62,3 +62,9 @@ h2 {
 button {
    cursor: pointer;
 }
+
+.container{
+   width: min(1200px, 95%);
+   margin-left: auto;
+   margin-right: auto;
+}

@@ -4,18 +4,25 @@ import ptBR from 'date-fns/locale/pt-BR'
 import styles from './index.module.scss'
 
 const Header = () => {
-   const currentDate = format(new Date(), 'EEEEEE, d, MMMM', {
+   const currentDate = format(new Date(), "EEEEEE, d, MMMM", {
       locale: ptBR
    })
 
    return (
-      <header className={styles.headerContainer}>
-         {/*eslint-disable-next-line*/}
-         <img src="logo.svg" alt="Porcastr" />
+      <header id={styles.header}>
+         <div className={`${styles.headerContainer} container`}>
+            
+            <div className={styles.infoHeader}>
+               {/*eslint-disable-next-line*/}
+               <a href="/"><img src="/logo.svg" alt="Porcastr" /></a>
 
-         <p>O melhor para você ouvir sempre</p>
+               <div className={styles.separator}></div>
 
-         <span>{currentDate}</span>
+               <p>O melhor para você ouvir sempre</p>
+            </div>
+
+            <span>{currentDate}</span>
+         </div>
       </header>
    )
 }

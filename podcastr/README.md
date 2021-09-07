@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O podcastr é uma aplicação para reprodução de episódios em áudio. O Projeto foi feito seguindo as aulas da Rocketseat. Em seguida fiz algumas alterações no layout, alterando a posição do player e adicioando responsividade.
+O podcastr é uma aplicação para reprodução de episódios em áudio. O Projeto foi feito seguindo as aulas da Rocketseat. Em seguida fiz algumas alterações no layout, alterando a posição do player e adicionando responsividade.
 
 ## 🚀 Como executar
 

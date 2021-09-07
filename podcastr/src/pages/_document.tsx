@@ -13,6 +13,8 @@ export default class MyDocument extends Document {
                   rel="stylesheet"
                />
                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+               <link rel="shortcut icon" href="favicon.png" type="image/png" />
             </Head>
             <body>
                <Main />

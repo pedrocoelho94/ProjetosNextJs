@@ -6,15 +6,17 @@ import { useRouter } from 'next/router'
 import { api } from '../../services/api'
 import { convertDurationToTimeString } from '../../utils/convertDuration'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import styles from './episode.module.scss'
+import { usePlayer } from '../../contexts/PlayerContext'
 
 type Episode = {
    id: string
    title: string
    members: string
    thumbnail: string
-   duration: string
+   duration: number
    durationAsString: string
    url: string
    publishedAt: string
@@ -26,8 +28,15 @@ type EpisodeProps = {
 }
 
 export default function Episode({ episode }: EpisodeProps) {
+   const { play } = usePlayer() // importa o contexto
+
    return (
       <div className={`${styles.episode} container`}>
+         
+         <Head>
+            <title>{episode.title} | Podcastr</title>
+         </Head>
+
          <div className={styles.thumbnailContainer}>
             <Link href="/" passHref>
                <button type="button">
@@ -41,10 +50,9 @@ export default function Episode({ episode }: EpisodeProps) {
                src={episode.thumbnail}
                alt="Thumbnail"
                objectFit="cover"
-               
             />
 
-            <button type="button">
+            <button type="button" onClick={() => play(episode)}>
                {/*eslint-disable-next-line*/}
                <img src="/play.svg" alt="Tocar episódio" />
             </button>

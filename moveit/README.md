@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="move.it" title="move.it" src=".github/logo.png" />
+  <img alt="Podcastr" title="Podcastr" src=".github/logo.png" />
 </h1>
 
 <p align="center">
@@ -10,16 +10,10 @@
   <a href="#-licença">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
-
- <img src="https://img.shields.io/static/v1?label=NLW&message=04&color=8257E5&labelColor=000000" alt="NLW 04" />
-</p>
-
 <br>
 
 <p align="center">
-  <img alt="Happy" src=".github/moveit.png" width="100%">
+  <img alt="Em breve uma screenshot" src=".github/moveit.png" width="100%">
 </p>
 
 ## ✨ Tecnologias
@@ -32,16 +26,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O move.it é um app que une a técnica de Pomodoro com a realização de exercícios físicos para quem passa muito tempo na frente do computador.
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
+O podcastr é uma aplicação para reprodução de episódios em áudio. O Projeto foi feito seguindo as aulas da Rocketseat. Em seguida fiz algumas alterações no layout, alterando a posição do player e adicioando responsividade.
 
 ## 🚀 Como executar
 
 - Clone o repositório
 - Instale as dependências com `yarn`
+- Inicie a fake api com `yarn server`
 - Inicie o servidor com `yarn dev`
 
 Agora você pode acessar [`localhost:3000`](http://localhost:3000) do seu navegador.
